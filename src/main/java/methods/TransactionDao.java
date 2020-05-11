@@ -4,6 +4,7 @@ import data.Transaction;
 import data.Type;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class TransactionDao {
@@ -60,7 +61,7 @@ public class TransactionDao {
         }catch (SQLException e) {
             System.err.println("Reading record failed");
         }
-        return null;
+        return Collections.emptyList();
     }
 
     public void update(Transaction transaction){
