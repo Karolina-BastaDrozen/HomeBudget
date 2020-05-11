@@ -1,3 +1,5 @@
+package methods;
+
 import data.Transaction;
 import data.Type;
 import java.sql.*;

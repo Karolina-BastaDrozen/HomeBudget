@@ -1,5 +1,8 @@
+package methods;
+
 import data.Transaction;
 import data.Type;
+import methods.TransactionDao;
 
 import java.math.BigDecimal;
 import java.text.DateFormat;
