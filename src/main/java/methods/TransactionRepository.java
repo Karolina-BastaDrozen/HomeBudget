@@ -2,7 +2,6 @@ package methods;
 
 import data.Transaction;
 import data.Type;
-import methods.TransactionDao;
 
 import java.math.BigDecimal;
 import java.text.DateFormat;
@@ -80,7 +79,7 @@ public class TransactionRepository {
     }
 
     private String checkIfTypeIsCorrect(String type) {
-        if (!type.equals(Type.EXPENSE.name()) && !type.equals(Type.INCOME.name())) {
+        while (!type.equals(Type.EXPENSE.name()) && !type.equals(Type.INCOME.name())) {
             System.out.println("\"EXPENSE\" or \"INCOME\" allowed only");
             type = scanner.nextLine();
         }
